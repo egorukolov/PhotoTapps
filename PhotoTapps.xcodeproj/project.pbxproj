@@ -9,21 +9,23 @@
 /* Begin PBXBuildFile section */
 		56AB9DB22C154FB4005ABE84 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56AB9DB12C154FB4005ABE84 /* AppDelegate.swift */; };
 		56AB9DB42C154FB4005ABE84 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56AB9DB32C154FB4005ABE84 /* SceneDelegate.swift */; };
-		56AB9DB62C154FB4005ABE84 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56AB9DB52C154FB4005ABE84 /* ViewController.swift */; };
 		56AB9DB92C154FB4005ABE84 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 56AB9DB82C154FB4005ABE84 /* Base */; };
 		56AB9DBB2C154FB6005ABE84 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 56AB9DBA2C154FB6005ABE84 /* Assets.xcassets */; };
 		56AB9DBE2C154FB6005ABE84 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 56AB9DBD2C154FB6005ABE84 /* Base */; };
+		56AB9DCA2C155251005ABE84 /* PhotosCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56AB9DC92C155251005ABE84 /* PhotosCollectionViewController.swift */; };
+		56AB9DCC2C15582F005ABE84 /* PhotosCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56AB9DCB2C15582F005ABE84 /* PhotosCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		56AB9DAE2C154FB4005ABE84 /* PhotoTapps.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PhotoTapps.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		56AB9DB12C154FB4005ABE84 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		56AB9DB32C154FB4005ABE84 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		56AB9DB52C154FB4005ABE84 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		56AB9DB82C154FB4005ABE84 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		56AB9DBA2C154FB6005ABE84 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		56AB9DBD2C154FB6005ABE84 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		56AB9DBF2C154FB6005ABE84 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		56AB9DC92C155251005ABE84 /* PhotosCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PhotosCollectionViewController.swift; path = "PhotoTapps/Storyboards /PhotosCollectionViewController.swift"; sourceTree = SOURCE_ROOT; };
+		56AB9DCB2C15582F005ABE84 /* PhotosCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PhotosCell.swift; path = "PhotoTapps/Storyboards /PhotosCell.swift"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +58,48 @@
 		56AB9DB02C154FB4005ABE84 /* PhotoTapps */ = {
 			isa = PBXGroup;
 			children = (
-				56AB9DB12C154FB4005ABE84 /* AppDelegate.swift */,
-				56AB9DB32C154FB4005ABE84 /* SceneDelegate.swift */,
-				56AB9DB52C154FB4005ABE84 /* ViewController.swift */,
-				56AB9DB72C154FB4005ABE84 /* Main.storyboard */,
-				56AB9DBA2C154FB6005ABE84 /* Assets.xcassets */,
-				56AB9DBC2C154FB6005ABE84 /* LaunchScreen.storyboard */,
-				56AB9DBF2C154FB6005ABE84 /* Info.plist */,
+				56AB9DC52C15503B005ABE84 /* ViewControllers */,
+				56AB9DC62C155062005ABE84 /* Storyboards  */,
+				56AB9DC82C155095005ABE84 /* SupportingFiles */,
+				56AB9DC72C15507F005ABE84 /* Sources */,
 			);
 			path = PhotoTapps;
+			sourceTree = "<group>";
+		};
+		56AB9DC52C15503B005ABE84 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				56AB9DCB2C15582F005ABE84 /* PhotosCell.swift */,
+				56AB9DC92C155251005ABE84 /* PhotosCollectionViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		56AB9DC62C155062005ABE84 /* Storyboards  */ = {
+			isa = PBXGroup;
+			children = (
+				56AB9DB72C154FB4005ABE84 /* Main.storyboard */,
+				56AB9DBC2C154FB6005ABE84 /* LaunchScreen.storyboard */,
+			);
+			path = "Storyboards ";
+			sourceTree = "<group>";
+		};
+		56AB9DC72C15507F005ABE84 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				56AB9DBA2C154FB6005ABE84 /* Assets.xcassets */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		56AB9DC82C155095005ABE84 /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				56AB9DB12C154FB4005ABE84 /* AppDelegate.swift */,
+				56AB9DB32C154FB4005ABE84 /* SceneDelegate.swift */,
+				56AB9DBF2C154FB6005ABE84 /* Info.plist */,
+			);
+			path = SupportingFiles;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,9 +173,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				56AB9DB62C154FB4005ABE84 /* ViewController.swift in Sources */,
+				56AB9DCC2C15582F005ABE84 /* PhotosCell.swift in Sources */,
 				56AB9DB22C154FB4005ABE84 /* AppDelegate.swift in Sources */,
 				56AB9DB42C154FB4005ABE84 /* SceneDelegate.swift in Sources */,
+				56AB9DCA2C155251005ABE84 /* PhotosCollectionViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -294,7 +330,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 48X7U22M49;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = PhotoTapps/Info.plist;
+				INFOPLIST_FILE = PhotoTapps/SupportingFiles/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -307,6 +343,10 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.egorukolov.PhotoTapps;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -322,7 +362,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 48X7U22M49;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = PhotoTapps/Info.plist;
+				INFOPLIST_FILE = PhotoTapps/SupportingFiles/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -335,6 +375,10 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.egorukolov.PhotoTapps;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
