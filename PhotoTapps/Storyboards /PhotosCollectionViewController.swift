@@ -9,9 +9,24 @@ import UIKit
 
 class PhotosCollectionViewController: UICollectionViewController {
     
+    let itemsPerRow: CGFloat = 2
+    let sectionsInsers = UIEdgeInsets(top: 20, left: 20, bottom: 20, right: 20)
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        let collectionViewWidth = collectionView.frame.width
+        print("Collection View Width: \(collectionViewWidth)")
+        
+        // Альтернативный способ настройки Loyout
+//        let loyout = collectionView.collectionViewLayout as! UICollectionViewFlowLayout
+//        loyout.itemSize = CGSize(width: 70, height: 70)
+//        loyout.sectionInset = UIEdgeInsets(top: 18, left: 18, bottom: 18, right: 18)
+//        loyout.minimumInteritemSpacing = 1
+//        loyout.minimumLineSpacing = 1
+//        loyout.scrollDirection = .vertical
+//        
+//        collectionView.showsVerticalScrollIndicator = false
     }
     
     
@@ -43,11 +58,11 @@ class PhotosCollectionViewController: UICollectionViewController {
 // Подключение возможности настройки Flow Layout через код
 extension PhotosCollectionViewController: UICollectionViewDelegateFlowLayout {
     
-    // Определим явно размер наших ячеек
+    // Определим размер наших ячеек
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         
-        let itemsPerRow: CGFloat = 3
-        let paddingWidh = 20 * (itemsPerRow + 1)
+        
+        let paddingWidh = sectionsInsers.left * (itemsPerRow + 1)
         let availableWidth = collectionView.frame.width - paddingWidh
         let widthPerItem = availableWidth / itemsPerRow
         
@@ -56,17 +71,17 @@ extension PhotosCollectionViewController: UICollectionViewDelegateFlowLayout {
     
     // Настройка отступов
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
-        return UIEdgeInsets(top: 18, left: 18, bottom: 18, right: 18)
+        sectionsInsers
     }
     
     // Настройка расстояния между линиями
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
-        return 18
+        18
     }
     
     // Настройка расстояния между рядами
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {
-         return 18
+        18
     }
     
 }
