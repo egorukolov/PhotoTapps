@@ -8,22 +8,33 @@
 import UIKit
 
 class PhotoViewController: UIViewController {
-
+    
+    var image: UIImage?
+    
+    @IBOutlet var photoImageView: UIImageView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        
+        photoImageView.image = image
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    // Настройка функции поделиться
+    
+    @IBAction func shareAction(_ sender: Any) {
+        
+        let shareController = UIActivityViewController(activityItems: [image!],
+                                                       applicationActivities: nil)
+        shareController.completionWithItemsHandler = { _, bool, _, _ in
+            if bool {
+                print("Успешно!")
+            }
+        }
+        
+        
+        present(shareController, animated: true, completion: nil)
+        
     }
-    */
-
+    
+    
 }

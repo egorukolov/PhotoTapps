@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		565816E32C194ED500868B4A /* PhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 565816E22C194ED500868B4A /* PhotoViewController.swift */; };
 		56AB9DB22C154FB4005ABE84 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56AB9DB12C154FB4005ABE84 /* AppDelegate.swift */; };
 		56AB9DB42C154FB4005ABE84 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56AB9DB32C154FB4005ABE84 /* SceneDelegate.swift */; };
 		56AB9DB92C154FB4005ABE84 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 56AB9DB82C154FB4005ABE84 /* Base */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		565816E22C194ED500868B4A /* PhotoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PhotoViewController.swift; path = "PhotoTapps/Storyboards /PhotoViewController.swift"; sourceTree = SOURCE_ROOT; };
 		56AB9DAE2C154FB4005ABE84 /* PhotoTapps.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PhotoTapps.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		56AB9DB12C154FB4005ABE84 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		56AB9DB32C154FB4005ABE84 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -69,6 +71,7 @@
 		56AB9DC52C15503B005ABE84 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				565816E22C194ED500868B4A /* PhotoViewController.swift */,
 				56AB9DCB2C15582F005ABE84 /* PhotosCell.swift */,
 				56AB9DC92C155251005ABE84 /* PhotosCollectionViewController.swift */,
 			);
@@ -177,6 +180,7 @@
 				56AB9DB22C154FB4005ABE84 /* AppDelegate.swift in Sources */,
 				56AB9DB42C154FB4005ABE84 /* SceneDelegate.swift in Sources */,
 				56AB9DCA2C155251005ABE84 /* PhotosCollectionViewController.swift in Sources */,
+				565816E32C194ED500868B4A /* PhotoViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
